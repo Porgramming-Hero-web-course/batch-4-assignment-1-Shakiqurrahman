@@ -1,1 +1,1 @@
-[Read Blog 1](./blog1.md)
+[Read Blog 1](./Blog1.md)
