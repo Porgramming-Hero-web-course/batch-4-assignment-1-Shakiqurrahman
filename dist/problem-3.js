@@ -1,12 +1,12 @@
 "use strict";
 {
-    // problem - 3 ---> Write a TypeScript function countWordOccurrences that takes a sentence (string) and a word (string). It should return the number of times the word appears in the sentence, case-insensitively.
+    // problem - 3 ---> Create a TypeScript function called countWordOccurrences that accepts a sentence (string) and a word (string). The function should return the number of times the word appears in the sentence, ignoring case. Use the simple sentence without punctuation as input.
     const countWordOccurrences = (sentence, word) => {
         return sentence
             .toLowerCase()
             .split(" ")
-            .filter((w) => w.toLowerCase().includes(word.toLowerCase())).length;
+            .filter((w) => w.toLowerCase() === word.toLowerCase()).length;
     };
-    const count = countWordOccurrences("TypeScript is great. I love TypeScript! It gives us  typeSafety", "types");
+    const count = countWordOccurrences("I love typescript TypeScript", "typescript");
     console.log(count);
 }
